@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Utility class start */
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexEnd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flexStart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.redText {
+    color: red;
+}
+.blueText {
+    color: blue;
+}
+/* Utility class end */
+
+/* header start */
+header {
+    background-color: cornflowerblue;
+    width: 100%;
+}
+h1 {
+    color: white;
+    margin-left: 10%;
+    font-size: 45px;
+    
+}
+ul li {
+    list-style-type: none;
+    font-size: 25px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.locationPick {
+    color: white;
+    padding: 30px;
+    margin-right: 10%;
+    overflow: hidden;
+}
+/* header end */
+
+
+/* Content start */
+.content {
+    margin: 0 10%;
+    min-height: 500px;
+}
+
+/* location header start */
+.locationHeader {
+    width: 100%;
+    min-height: 100px;
+    overflow: hidden;
+}
+.locationName {
+    font-size: larger;
+    width: 50%;
+    min-height: 100px;
+    align-self: flex-start;
+}
+#locationName {
+}
+#locationFC {
+    min-height: 30px;
+    min-width: 300px;
+}
+#showTemp {
+    font-size:medium;
+    overflow: hidden;
+    padding-right: 10px;
+}
+#tempUnitPicker {
+    font-size: large;
+    cursor: pointer;
+
+}
+
+
+
+/* location header end */
+
+/* weather start */
+.weather {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.dailyWeather {
+    background-color: blanchedalmond;
+    width: 20px;
+    flex: 1;
+    gap: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+}
+.dailyWeather:hover {
+    position: relative;
+    top: -15px;
+    box-shadow: 0px 0px 8px rgb(170, 170, 170) ;
+}
+.dailyWeather h2 {
+    padding: 10px;
+}
+/* weather end */
+
+/* Cookie box start */
+.cookieBox {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.cookieText{
+    padding: 0 20px;
+}
+#acceptBtn {
+    font-size: medium;
+    width: 200px;
+    padding: 5px 5px;
+    background-color: gold;
+    border: 1px solid black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#acceptBtn:hover {
+    background-color: blue;
+    box-shadow: 2px 2px black;
+    color: white;
+}
+.dailyWeather img{
+    width: 250px;
+    border-radius: 50%;
+  
+}
+.weatherTemp {
+    width: 50%;
+}
+
+/* Cookie box end */
+
+/* Content end */
+

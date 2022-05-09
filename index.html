@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="flexBetween">
+        <h1>Dojo Weather</h1>
+        <div class="locationPick flexCenter">
+            <ul class="flexCenter">
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Sorry, only San Jose.')"> Chicago</li>
+                <li onclick="alert('ONLY SAN JOSE!')">Dallas</li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="locationHeader flexBetween">
+            <div class="locationName flexStart">
+                <h2 id="locationNames">San Jose</h2>
+            </div>
+            <div id="locationFC" class="flexEnd">
+                <p id="showTemp">Show in temperature in</p>
+                <select onchange="changeTemp()" name="temp unit" id="tempUnitPicker">
+                    <option value="celsius">C°</option>
+                    <option value="farenheit">F°</option>
+                </select>
+            </div>
+        </div>
+        <div class="weather flexBetween">
+            <div class="dailyWeather">
+                <h2>Today</h2>
+                <img class="weatherImg" src="./assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="weatherTemp flexBetween">
+                    <p class="redText"><span class="temp">24</span>°</p>
+                    <p class="blueText"><span class="temp">18</span>°</p>
+                </div>
+            </div>
+            <div class="dailyWeather">
+                <h2>Tomorrow</h2>
+                <img class="weatherImg" src="./assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="weatherTemp flexBetween">
+                    <p class="redText"><span class="temp">27</span>°</p>
+                    <p class="blueText"><span class="temp">19</span>°</p>
+                </div>
+            </div>
+            <div class="dailyWeather">
+                <h2>Friday</h2>
+                <img class="weatherImg" src="./assets/some_clouds.png" alt="some clouds">
+                <p>some clouds</p>
+                <div class="weatherTemp flexBetween">
+                    <p class="redText"><span class="temp">24</span>°</p>
+                    <p class="blueText"><span class="temp">16</span>°</p>
+                </div>
+            </div>
+            <div class="dailyWeather">
+                <h2>Saturday</h2>
+                <img id="WeatherImg" src="./assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="weatherTemp flexBetween">
+                    <p class="redText"><span class="temp">26</span>°</p>
+                    <p class="blueText"><span class="temp">21</span>°</p>
+                </div>
+            </div>
+        </div>
+        <div class="cookieBox flexStart">
+            <img src="./assets/cookie.png" alt="">
+            <div class="cookieText">
+                <h2>Stop! Cookie Time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provie social media features and to analyse our traffic. <a>Read more...</a></p>
+            </div>
+            <button id="acceptBtn" onclick="removeCookie()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
